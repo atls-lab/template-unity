@@ -1,0 +1,26 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-error.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# MacOS temporary files
+.DS_Store
+
+# JetBrains Files
+.idea
+*.iml
+
+# Env
+.env
+
+# Игнорируемые файлы для Unity
+[Oo]bj/
+[Bb]uild/
+[Ll]ibrary/
+[Tt]emp/
