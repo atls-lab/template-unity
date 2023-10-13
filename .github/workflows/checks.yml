@@ -1,0 +1,19 @@
+name: Unity Test Runner
+
+on:
+  pull_request:
+    paths:
+      - 'Assets/**'
+      - 'Tests/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run Unity Tests
+        uses: game-ci/unity-test-runner@v2
+        with:
+          unity-version: '2020.3.10f1'
